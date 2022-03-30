@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { JavaComponent } from './java/java.component';
 import { HtmlComponent } from './html/html.component';
 import { CssComponent } from './css/css.component';
+import { UserComponent } from './user/user.component';
+import { UsersComponent } from './users/users.component';
 //import { Routes,RouterModule } from '@angular/router';
 
 // const appRoutes:Routes=[
@@ -27,7 +29,9 @@ import { CssComponent } from './css/css.component';
     AppComponent,
     JavaComponent,
     HtmlComponent,
-    CssComponent
+    CssComponent,
+    UserComponent,
+    UsersComponent
   ],
   imports: [
     BrowserModule,

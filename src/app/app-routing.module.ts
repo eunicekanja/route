@@ -3,6 +3,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { CssComponent } from './css/css.component';
 import { HtmlComponent } from './html/html.component';
 import { JavaComponent } from './java/java.component';
+import { UserComponent } from './user/user.component';
+import { UsersComponent } from './users/users.component';
 
 const routes: Routes = [
   {
@@ -17,6 +19,16 @@ const routes: Routes = [
     path:'css',
     component:CssComponent
   },
+  {
+    path:'users',
+    component:UsersComponent
+  },
+
+  {
+    path:'users/:id/:name',
+    component:UserComponent
+  },
+  
 ];
 
 @NgModule({
