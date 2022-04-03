@@ -1,6 +1,8 @@
 <p>Hera are the users</p>
-<ul>
-    <li><a>Max</a></li>
-    <li><a>Anna</a></li>
-    <li><a>Chris</a></li>
+<ul *ngFor="let user of users; let i=index">
+    <li><a 
+        [routerLink]="['/users',user.id,user.name,user.title]"
+        routerLinkActive="active"
+        [routerLinkActiveOptions]="{exact: true}"
+        >{{user.name}}</a></li>
 </ul>
