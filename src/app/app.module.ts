@@ -8,6 +8,7 @@ import { HtmlComponent } from './html/html.component';
 import { CssComponent } from './css/css.component';
 import { UserComponent } from './user/user.component';
 import { UsersComponent } from './users/users.component';
+import { EditComponent } from './edit/edit.component';
 //import { Routes,RouterModule } from '@angular/router';
 
 // const appRoutes:Routes=[
@@ -31,7 +32,8 @@ import { UsersComponent } from './users/users.component';
     HtmlComponent,
     CssComponent,
     UserComponent,
-    UsersComponent
+    UsersComponent,
+    EditComponent
   ],
   imports: [
     BrowserModule,

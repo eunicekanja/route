@@ -2,4 +2,12 @@
 <p>User name: {{user.name}}</p>
 <p>Title: {{user.title}}</p>
 
- <button (click)="back()">Back</button>
+ <button (click)="back()">Back</button><br>
+ <button (click)="loadOther(user.id)">Load new</button>
+ <button (click)="logUsers()">log</button><br>
+<a (click)="next(user.id)" [routerLink]="['/users',3,'sue','dev']">Next</a><br>
+<a
+ [routerLink]="['/users',user.id,'edit']"
+ [queryParams]="{allowEdit:1}"
+ [fragment]="'loading'"
+>Edit</a>
