@@ -32,9 +32,7 @@ const routes: Routes = [
   {
     path:'users/:id/edit',
     component:EditComponent
-  },
-
-  
+  }, 
 ];
 
 @NgModule({

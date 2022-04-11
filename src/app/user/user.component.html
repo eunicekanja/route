@@ -5,7 +5,7 @@
  <button (click)="back()">Back</button><br>
  <button (click)="loadOther(user.id)">Load new</button>
  <button (click)="logUsers()">log</button><br>
-<a (click)="next(user.id)" [routerLink]="['/users',3,'sue','dev']">Next</a><br>
+<button (click)="next(user.id)">Next</button><br>
 <a
  [routerLink]="['/users',user.id,'edit']"
  [queryParams]="{allowEdit:1}"

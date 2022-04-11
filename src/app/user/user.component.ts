@@ -44,13 +44,11 @@ export class UserComponent implements OnInit {
     fragment:'loading'})
   }
   next(userId:any){
-     this.newId=this.count++;
-     this.user={
-       id:this.newId,
-       name:this.users[this.newId].name,
-       title:this.users[this.newId].title
-
-     }
+     this.newId=Number(userId)+1;
+     console.log(Number(userId))
+     if(this.newId>this.users.length){ this.newId=1}
+     this.router.navigate(['/users',this.newId,this.users[this.newId-1].name,this.users[this.newId-1].title])
+     //this.router.navigate(['/users',newNum,this.users[newNum].name,this.users[newNum].title])
   }
   logUsers(){
     console.log(this.usersList.users)
